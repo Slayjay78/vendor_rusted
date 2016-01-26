@@ -60,7 +60,8 @@ PRODUCT_COPY_FILES += \
 
 # Extra packages
 PRODUCT_PACKAGES += \
-    Stk 
+    Stk \
+    Browser
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -77,5 +78,3 @@ PRODUCT_COPY_FILES += \
 # Init.d script support
 PRODUCT_COPY_FILES += \
     vendor/rusted/prebuilt/common/bin/sysinit:system/bin/sysinit
-
--include vendor/rusted/products/common_fingerprints.mk
