@@ -1,2 +1,3 @@
 add_lunch_combo rusted_angler-userdebug
+add_lunch_combo rusted_bullhead-userdebug
 
