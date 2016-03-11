@@ -61,7 +61,8 @@ PRODUCT_COPY_FILES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     Stk \
-    Browser
+    Browser \
+    Viper4Android
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -78,3 +79,4 @@ PRODUCT_COPY_FILES += \
 # Init.d script support
 PRODUCT_COPY_FILES += \
     vendor/rusted/prebuilt/common/bin/sysinit:system/bin/sysinit
+
