@@ -49,28 +49,13 @@ PRODUCT_COPY_FILES += \
 # Block based ota flag default to off to get old style ota zip back (To get back block based zip, just enable to true.)
 #TARGET_USES_BLOCK_BASED_OTA := false
 
-# SuperSU
-PRODUCT_COPY_FILES += \
-    vendor/rusted/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/rusted/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-
 # Latin IME lib - gesture typing
 PRODUCT_COPY_FILES += \
     vendor/rusted/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
 # Extra packages
 PRODUCT_PACKAGES += \
-    Stk \
-    Browser \
-    Viper4Android
-
-# Backup Tool
-PRODUCT_COPY_FILES += \
-    vendor/rusted/prebuilt/common/addon.d/50-chroma.sh:system/addon.d/50-chroma.sh \
-    vendor/rusted/prebuilt/common/addon.d/99-backup.sh:system/addon.d/99-backup.sh \
-    vendor/rusted/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/rusted/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/rusted/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+    Stk 
 
 # APN list
 PRODUCT_COPY_FILES += \
