@@ -57,6 +57,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Stk 
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/rusted/prebuilt/common/addon.d/50-chroma.sh:system/addon.d/50-chroma.sh \
+    vendor/rusted/prebuilt/common/addon.d/99-backup.sh:system/addon.d/99-backup.sh \
+    vendor/rusted/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/rusted/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/rusted/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+
 # APN list
 PRODUCT_COPY_FILES += \
     vendor/rusted/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
@@ -65,3 +73,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/rusted/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+# Enable tethering
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.dun.override=0
+
+# Init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/rusted/prebuilt/common/bin/sysinit:system/bin/sysinit
